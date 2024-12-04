@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookingBot Team Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Body Style */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f8ff; 
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(90deg, #004aad, #007bff); 
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header nav a {
+            font-size: 1rem;
+            color: #ffdd57; 
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            font-family: 'Merriweather', serif; 
+            color: #004aad;
+            border-bottom: 2px solid #004aad;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .row img {
+            flex: 1 1 calc(33% - 10px); 
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background: #004aad;
+            color: #fff;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #ffdd57; 
+            text-decoration: none;
+        }
+
+        /* Team Info Section Styling */
+/* Team Info Section Styling */
+.team-header {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and team info */
+    justify-content: flex-start; /* Align items to the left */
+    padding-left: 10px; /* Reduce space on the left */
+}
+
+.team-logo {
+    max-height: 80px; /* Adjust logo size */
+    max-width: 120px; /* Adjust logo size */
+}
+
+.team-info {
+    text-align: left;
+}
+
+.team-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CookingBot Team Showcase</h1>
+        <nav>
+            <a href="#team-info">Team Info</a>
+            <a href="#robot-building">Robot Building</a>
+            <a href="#pid-control">PID Control</a>
+            <a href="#competition-scores">Scores</a>
+            <a href="#videos">Videos</a>
+            <a href="#team-photo">Team</a>
+            <a href="#reflections">Reflections</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="team-info">
+            <h2>Team Info</h2>
+            <div class="team-header">
+                <img src="team_logo.png" alt="Team Logo" class="team-logo">
+                <div class="team-info">
+                    <p><strong>Team Number:</strong> 21</p>
+                    <p><strong>Team Name:</strong> CookingBot</p>
+                    <p><strong>Team Members:</strong> Franklin Tan, Congge Xu, Avishke Senanayake, Adel Afif</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="robot-building">
+            <h2>Robot Building</h2>
+            <p>Details about prototyping, parts used, and assembly process.</p>
+            <div class="row">
+                <img src="path_to_prototype.jpg" alt="Prototype with Annotations">
+                <img src="final_robot.png" alt="Final Robot with Annotations">
+            </div>
+        </section>
+
+        <section id="pid-control">
+            <h2>PID Control</h2>
+            <p><strong>PID Values:</strong> [Insert PID Values]</p>
+            <p>Explanation of how values were chosen and adjustments made for different tracks.</p>
+            <p><strong>Code Modifications:</strong> [Optional: Insert key modifications]</p>
+        </section>
+
+        <section id="competition-scores">
+            <h2>Competition Scores</h2>
+            <p><strong>Drag Race:</strong> Time - [Insert Time], Rank - [Insert Rank]</p>
+            <p><strong>Frequency Sweep:</strong> Distance - [Insert Distance], Time - [Insert Time], Rank - [Insert Rank]</p>
+            <p><strong>Loop:</strong> Loops - [Insert Number], Rank - [Insert Rank]</p>
+        </section>
+
+        <section id="videos">
+            <h2>Competition Videos</h2>
+            <video controls>
+                <source src="path_to_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="team-photo">
+            <h2>Team Photo</h2>
+            <img src="path_to_team_photo.jpg" alt="CookingBot Team Picture">
+        </section>
+
+        <section id="reflections">
+            <h2>Reflections</h2>
+            <p>Summary of improvements made during the last week:</p>
+            <p>[Insert improvements made]</p>
+            <p>Ideas for further improvements:</p>
+            <p>[Insert suggestions or future plans]</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CookingBot Team | <a href="path_to_poster.jpg">Download Poster</a></p>
+    </footer>
+</body>
+</html>
