@@ -6,6 +6,8 @@ body {
     padding: 0;
 }
 
+
+
 header h1 {
     font-family: 'Merriweather', serif;
     margin: 0;
@@ -27,6 +29,7 @@ header {
 header nav {
     background: inherit; /* Inherit header background */
     padding: 10px 0;
+    
 }
 
 header nav a {
@@ -80,6 +83,7 @@ section h2 {
     background-color: #f9f9f9;       /* Light background color for subsections */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    
 }
 
 .row {
@@ -412,12 +416,15 @@ figcaption {
   
 
   #robot-building {
+    
     background-color: #f4f8ff; /* Light background matching your website theme */
-    padding: 0px 20px;
+    padding: 30px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; /* Adds space below the section */
-    overflow: hidden;
+    
+
+
   }
   
   #videos {
@@ -456,7 +463,3 @@ figcaption {
     margin-bottom: 20px; /* Adds space below the section */
   }
   
-
- .h4 {
-
- }
