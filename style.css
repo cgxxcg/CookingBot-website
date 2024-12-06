@@ -121,7 +121,7 @@ footer a {
 
 #team {
     background-color: #f4f8ff; /* Light background matching your website theme */
-    padding: 30px 20px;
+    padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -140,13 +140,14 @@ footer a {
 }
 
 .team-logo {
-    max-width: 100px; /* Adjust size of the logo */
+    max-width: 120px; /* Adjust size of the logo */
     height: auto;
 }
 
 .team-info-right {
     flex: 2;
-    padding-left: 0px;
+    margin-left: -20px;
+    padding-right: 10px;
 }
 
 .team-photo-container {
@@ -159,6 +160,23 @@ footer a {
     max-width: 100%;  /* Ensures the photo doesn't overflow */
     height: auto;
 }
+
+.poster-container {
+    text-align: center; /* Center align the poster */
+    margin-top: 20px; /* Adds space between the team photo and poster */
+}
+
+.poster-image {
+    max-width: 80%; /* Adjust the width as needed */
+    height: auto;
+}
+
+
+
+
+
+
+
 
 
 
@@ -270,7 +288,7 @@ figcaption {
 /* PID Section */
 .pid-section {
     background-color: #f4f8ff; /* Light background matching your website theme */
-    padding: 30px 20px;
+    padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -418,7 +436,7 @@ figcaption {
   #robot-building {
     
     background-color: #f4f8ff; /* Light background matching your website theme */
-    padding: 30px 20px;
+    padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; /* Adds space below the section */
@@ -429,7 +447,7 @@ figcaption {
   
   #videos {
     background-color: #f4f8ff; /* Light background matching your website theme */
-    padding: 30px 20px;
+    padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; /* Adds space below the section */
@@ -457,7 +475,7 @@ figcaption {
   
   #reflections {
     background-color: #f4f8ff; /* Light background matching your website theme */
-    padding: 30px 20px;
+    padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; /* Adds space below the section */
