@@ -1,0 +1,462 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f8ff; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header {
+    position: sticky; /* Make the entire header sticky */
+    top: 0; /* Stick to the top */
+    background: linear-gradient(90deg, #004aad, #007bff);
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+header nav {
+    background: inherit; /* Inherit header background */
+    padding: 10px 0;
+}
+
+header nav a {
+    font-size: 1rem;
+    color: #ffdd57;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffffff;
+    background: linear-gradient(90deg, #ff9e00, #ffdd57); 
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    scroll-margin-top: 140px; /* Adjust based on your header's height */
+    
+}
+
+
+section h2 {
+    font-family: 'Merriweather', serif; 
+    color: #004aad;
+    border-bottom: 2px solid #004aad;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#robot-building h3 {
+    font-size: 1.1rem;               /* Smaller font size for subsections */
+    color: #007bff;                  /* A softer blue for subsection titles */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;               /* Keep it bold but without underline */
+}
+
+#robot-building section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;       /* Light background color for subsections */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.row {
+    display: flex;
+    gap: 15px;                        /* Slightly more space between images */
+    justify-content: center;          /* Center images horizontally */
+    align-items: flex-start;
+}
+
+.row img {
+    max-width: auto;                   /* Slightly smaller images */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow for images */
+}
+
+#robot-building section p {
+    font-size: 0.9rem;                /* Smaller font for descriptions */
+    line-height: 1.6;
+    color: #555;                      /* Lighter color for text */
+}
+
+footer {
+    text-align: center;
+    background: #004aad;
+    color: #fff;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #ffdd57; 
+    text-decoration: none;
+}
+
+#team {
+    background-color: #f4f8ff; /* Light background matching your website theme */
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.team-info-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.team-logo {
+    max-width: 100px; /* Adjust size of the logo */
+    height: auto;
+}
+
+.team-info-right {
+    flex: 2;
+    padding-left: 0px;
+}
+
+.team-photo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.team-photo {
+    max-width: 100%;  /* Ensures the photo doesn't overflow */
+    height: auto;
+}
+
+
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+figure {
+    display: flex;
+    flex-direction: column; /* Stack the media and caption */
+    align-items: center; /* Center content */
+    width: 48%; /* Each media takes almost half the page */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align captions */
+}
+
+figure img, figure video {
+    width: 100%; /* Fill the figure container width */
+    height: 355px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Shadow for depth */
+}
+
+figcaption {
+    margin-top: 8px; /* Add space above the caption */
+    font-size: 1rem; /* Slightly larger font size for better readability */
+    color: #555; /* Light color for captions */
+}
+
+.column {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the content */
+}
+
+.image-container {
+    text-align: center; /* Center the caption under the image */
+    margin-bottom: 20px; /* Space between images */
+}
+
+.image-container img {
+    width: 100%; /* Full width within the column */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Shadow for depth */
+}
+
+.small-pictures img {
+    max-width: 330px; /* Adjust the size for smaller images */
+}
+
+.large-picture img {
+    max-width: 600px; /* Adjust the size for the larger image */
+}
+
+.caption {
+    font-size: 14px; /* Smaller font size for captions */
+    color: #555; /* Gray color for captions */
+    margin-top: 5px; /* Space above the caption */
+}
+
+#final-robot .image-container img {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+#final-robot .image-container img:hover {
+    transform: scale(1.05); /* Default zoom for all images */
+}
+
+/* Final Robot image */
+#final-robot .large-picture .image-container img:hover {
+    transform: scale(1.1); /* Slightly more zoom for the Final Robot picture */
+}
+
+/* Other two images */
+#final-robot .small-pictures .image-container img:hover {
+    transform: scale(1.7); /* More zoom for the other two images */
+}
+
+
+#redesigned-robot .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#redesigned-robot .image-container {
+    width: 32%; /* Adjust width for three images */
+    overflow: hidden;
+}
+
+#redesigned-robot .image-container img {
+    width: 100%;
+    transition: transform 0.3s ease; 
+}
+
+#redesigned-robot .image-container img:hover {
+    transform: scale(1.05); /* Zoom in a little for all images */
+}
+
+
+/* PID Section */
+.pid-section {
+    background-color: #f4f8ff; /* Light background matching your website theme */
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Section Titles */
+  .pid-section .section-title {
+    font-family: 'Merriweather', serif;
+    color: #004aad;
+    border-bottom: 2px solid #004aad;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* PID Explanation */
+  .pid-explanation {
+    margin-bottom: 40px;
+  }
+  
+  .pid-blocks {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+  }
+  .pid-blocks h4 {
+    color: #ffdd57;
+  }
+  
+  .pid-block {
+    background-color: #007bff; /* Soft blue background for blocks */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pid-block h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ffdd57; /* Matching yellow accent for headers */
+  }
+  
+  .pid-block p {
+    font-size: 0.9rem;
+    color: #f9f9f9; /* Lighter text color for readability */
+    line-height: 1.6;
+  }
+  
+
+
+  .general-approach {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 500; /* Slightly bolder for emphasis */
+}
+
+
+
+
+
+/* General Approach Text */
+.general-approach {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    background-color: #e9f5ff; /* Light blue background for better contrast */
+    padding: 25px;
+    margin-bottom: 35px;
+    border-left: 6px solid #007bff; /* A thicker, more prominent left border */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+/* Container for PID Tracks */
+.pid-tracks {
+    margin-top: 40px;
+}
+
+/* Container for Track Blocks */
+.tracks-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap; /* Prevent wrapping of the track blocks */
+}
+
+/* Each Track Info Block */
+.track-info {
+    background-color: #f4f4f4;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 32%; /* Each track takes up approximately 32% of the container */
+    min-width: 100px; /* Ensures track blocks don't get too narrow */
+}
+
+/* Track Headers */
+.track-info h4 {
+    font-size: 1.6rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Track Paragraphs */
+.track-info p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tracks-container {
+        flex-direction: column; /* Stack tracks vertically on small screens */
+        gap: 20px; /* Reduce gap between stacked items */
+    }
+
+    .general-approach {
+        font-size: 1rem;
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .track-info {
+        padding: 20px;
+        flex: 1 1 100%; /* Full width for each track block on smaller screens */
+    }
+}
+
+
+
+  
+
+  #robot-building {
+    background-color: #f4f8ff; /* Light background matching your website theme */
+    padding: 0px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adds space below the section */
+    overflow: hidden;
+  }
+  
+  #videos {
+    background-color: #f4f8ff; /* Light background matching your website theme */
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adds space below the section */
+}
+
+.video-container {
+    display: flex;
+    gap: 15px; /* Space between videos */
+    justify-content: center; /* Center videos horizontally */
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+.video-item {
+    flex: 1;
+    max-width: 320px; /* Optional: limits video size */
+    text-align: center;
+}
+
+.video-item video {
+    width: 100%; /* Ensures videos take up the full width of the container */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Optional: adds shadow to the videos */
+}
+
+  
+  #reflections {
+    background-color: #f4f8ff; /* Light background matching your website theme */
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adds space below the section */
+  }
+  
+
+ .h4 {
+
+ }

@@ -1,181 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CookingBot Team Showcase</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
-    <style>
-        /* General Body Style */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f8ff; 
-            color: #333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.8;
-        }
-
-        header {
-            background: linear-gradient(90deg, #004aad, #007bff); 
-            color: #fff;
-            padding: 15px 20px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-family: 'Merriweather', serif;
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        header nav a {
-            font-size: 1rem;
-            color: #ffdd57; 
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-
-        header nav a:hover {
-            color: #ffffff;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 30px auto;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        section h2 {
-            font-family: 'Merriweather', serif; 
-            color: #004aad;
-            border-bottom: 2px solid #004aad;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-
-        .row {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .row img {
-            flex: 1 1 calc(33% - 10px); 
-            border-radius: 8px;
-        }
-
-        footer {
-            text-align: center;
-            background: #004aad;
-            color: #fff;
-            padding: 15px;
-            margin-top: 30px;
-        }
-
-        footer a {
-            color: #ffdd57; 
-            text-decoration: none;
-        }
-
-        /* Team Info Section Styling */
-/* Team Info Section Styling */
-.team-header {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Space between logo and team info */
-    justify-content: flex-start; /* Align items to the left */
-    padding-left: 10px; /* Reduce space on the left */
-}
-
-.team-logo {
-    max-height: 80px; /* Adjust logo size */
-    max-width: 120px; /* Adjust logo size */
-}
-
-.team-info {
-    text-align: left;
-}
-
-.team-info p {
-    margin: 5px 0;
-    font-size: 1rem;
-}
-
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CookingBot Team Showcase</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> 
+        
+    </head>
 <body>
     <header>
         <h1>CookingBot Team Showcase</h1>
         <nav>
-            <a href="#team-info">Team Info</a>
             <a href="#robot-building">Robot Building</a>
             <a href="#pid-control">PID Control</a>
-            <a href="#competition-scores">Scores</a>
             <a href="#videos">Videos</a>
-            <a href="#team-photo">Team</a>
             <a href="#reflections">Reflections</a>
+            <a href="#team">Team</a>
         </nav>
+        
     </header>
+    
 
     <main>
-        <section id="team-info">
-            <h2>Team Info</h2>
-            <div class="team-header">
-                <img src="team_logo.png" alt="Team Logo" class="team-logo">
-                <div class="team-info">
-                    <p><strong>Team Number:</strong> 21</p>
-                    <p><strong>Team Name:</strong> CookingBot</p>
-                    <p><strong>Team Members:</strong> Franklin Tan, Congge Xu, Avishke Senanayake, Adel Afif</p>
-                </div>
-            </div>
-        </section>
-
         <section id="robot-building">
             <h2>Robot Building</h2>
-            <p>Details about prototyping, parts used, and assembly process.</p>
-            <div class="row">
-                <img src="path_to_prototype.jpg" alt="Prototype with Annotations">
-                <img src="final_robot.png" alt="Final Robot with Annotations">
+            <p>At the beginning, we used the chassis provided in class to assemble the robot and test it with a line-following prototype.
+            Later, we designed several chassis with adjustments to the light shield, Arduino board, breadboards, and battery arrangements to enhance both the robot's performance and appearance.
+            </p>
+        
+            <section id="initial-state">
+                <h3>Initial State of Robot</h3>
+                <p>The robot was built with breadboard circuits and original chassis. We tested the robot on the board.</p>
+                <div class="row">
+                    <figure>
+                        <img src="initial_prototype.png" alt="Initial Prototype">
+                        <figcaption>Initial Prototype of the Robot</figcaption>
+                    </figure>
+                    <figure>
+                        <video controls>
+                            <source src="1st_linefollowing.mp4" type="video/mp4">
+                        </video>
+                        <figcaption>Testing the Robot on the Board</figcaption>
+                    </figure>
+                </div>
+            </section>
+            
+        
+            <section id="redesigned-robot">
+                <h3>Redesigned Robot</h3>
+            
+                <ul>
+                    <li>Transferred the photoresistor breadboard circuit to the perfboard for improved connectivity during movement.</li>
+                    <li>Rewired the circuits by determining optimal lengths for jumper and stripped wires, ensuring organized connections.</li>
+                    <li>Applied hot glue to the motors and motor wires to enhance motor stability, prevent breakage, and improve friction for smoother movement.</li>
+                </ul>
+                
+
+                <div class="row">
+                    <div class="image-container">
+                        <img src="chassis_v1.jpg" alt="Chassis Version 1">
+                        <p class="caption">Chassis Version 1</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="chassis_v2.png" alt="Chassis Version 2">
+                        <p class="caption">Chassis Version 2</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="chassis_v3.png" alt="Chassis Version 3">
+                        <p class="caption">Chassis Version 3</p>
+                    </div>
+                </div>
+            </section>
+            
+        
+            <section id="final-robot">
+                <h3>Final Robot</h3>
+                <p>Our final robot is assembled in a chassis that includes battery support space, a perfboard holder, an Arduino holder, and a light shield for the photoresistor circuit.</p>
+                <div class="row">
+                    <!-- Vertical layout for layout and chassis pictures -->
+                    <div class="column small-pictures">
+                        <div class="image-container">
+                            <img src="final_layout.png" alt="Final Layout">
+                            <p class="caption">Final Layout</p>
+                        </div>
+                        <div class="image-container">
+                            <img src="final_chassis.png" alt="Final Chassis">
+                            <p class="caption">Final Chassis</p>
+                        </div>
+                    </div>
+                    <!-- Larger picture for the final robot -->
+                    <div class="column large-picture">
+                        <div class="image-container">
+                            <img src="final_robot.png" alt="Final Robot">
+                            <p class="caption">Final Robot</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+        </section>
+        
+        <section id="pid-control" class="pid-section">
+            <h2 class="section-title">PID Control</h2>
+            <div class="pid-container">
+                
+                <!-- Part 1: Explanation of PID -->
+                <div class="pid-explanation">
+                    <h3 class="subsection-title">What is PID Control?</h3>
+                    <div class="pid-blocks">
+                        <div class="pid-block" id="p-block">
+                            <h4>P - Proportional</h4>
+                            <p>The proportional term adjusts the output based on the current error. The larger the error, the stronger the correction applied.</p>
+                        </div>
+                        <div class="pid-block" id="i-block">
+                            <h4>I - Integral</h4>
+                            <p>The integral term accounts for past errors, helping eliminate steady-state errors and adjusting for bias over time.</p>
+                        </div>
+                        <div class="pid-block" id="d-block">
+                            <h4>D - Derivative</h4>
+                            <p>The derivative term reacts to the rate of change of error, helping to prevent overshoot and dampen oscillations.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Part 2: PID for Different Tracks -->
+<div class="pid-tracks">
+    <h3 class="subsection-title">PID Values for Different Tracks</h3>
+
+    <!-- General Approach Text -->
+    <p class="general-approach">
+        approach we used to tune PID on competition day
+    </p>
+
+    <!-- Container for Track Blocks -->
+    <div class="tracks-container">
+        <!-- Track 1 -->
+        <div class="track-info">
+            <h4>Track 1:</h4>
+            <p>P = xxx, I = xxx, D = xxx</p>
+        </div>
+
+        <!-- Track 2 -->
+        <div class="track-info">
+            <h4>Track 2:</h4>
+            <p>P = xxx, I = xxx, D = xxx</p>
+        </div>
+
+        <!-- Track 3 -->
+        <div class="track-info">
+            <h4>Track 3:</h4>
+            <p>P = xxx, I = xxx, D = xxx</p>
+        </div>
+    </div>
+</div>
+
             </div>
         </section>
-
-        <section id="pid-control">
-            <h2>PID Control</h2>
-            <p><strong>PID Values:</strong> [Insert PID Values]</p>
-            <p>Explanation of how values were chosen and adjustments made for different tracks.</p>
-            <p><strong>Code Modifications:</strong> [Optional: Insert key modifications]</p>
-        </section>
-
-        <section id="competition-scores">
-            <h2>Competition Scores</h2>
-            <p><strong>Drag Race:</strong> Time - [Insert Time], Rank - [Insert Rank]</p>
-            <p><strong>Frequency Sweep:</strong> Distance - [Insert Distance], Time - [Insert Time], Rank - [Insert Rank]</p>
-            <p><strong>Loop:</strong> Loops - [Insert Number], Rank - [Insert Rank]</p>
-        </section>
+        
 
         <section id="videos">
             <h2>Competition Videos</h2>
-            <video controls>
-                <source src="video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-container">
+                <div class="video-item">
+                    <h3>Track 1</h3>
+                    <video controls>
+                        <source src="track1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-item">
+                    <h3>Track 2</h3>
+                    <video controls>
+                        <source src="track2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-item">
+                    <h3>Track 3</h3>
+                    <video controls>
+                        <source src="track3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </section>
-
-        <section id="team-photo">
-            <h2>Team Photo</h2>
-            <img src="path_to_team_photo.jpg" alt="CookingBot Team Picture">
-        </section>
+        
 
         <section id="reflections">
             <h2>Reflections</h2>
@@ -184,10 +195,33 @@
             <p>Ideas for further improvements:</p>
             <p>[Insert suggestions or future plans]</p>
         </section>
+
+        <section id="team">
+            <h2>Team</h2>
+            <div class="team-header">
+                <!-- Team Logo and Information Section -->
+                <div class="team-info-left">
+                    <img src="team_logo.png" alt="Team Logo" class="team-logo">
+                </div>
+                <div class="team-info-right">
+                    <p><strong>Team Number:</strong> 21</p>
+                    <p><strong>Team Name:</strong> CookingBot</p>
+                    <p><strong>Team Members:</strong> Franklin Tan, Congge Xu, Avishke Senanayake, Adel Afif</p>
+                </div>
+            </div>
+            <!-- Team Photo Section -->
+            <div class="team-photo-container">
+                <img src="team_photo.jpg" alt="CookingBot Team Picture" class="team-photo">
+                <img src="poster.jpg" alt="CookingBot Team Picture" class="team-photo">
+            </div>
+        </section>
+        
+
+        
     </main>
 
     <footer>
-        <p>&copy; 2024 CookingBot Team | <a href="path_to_poster.jpg">Download Poster</a></p>
+        <p>&copy; FA24 CookingBot Team | <a href="poster.jpg">Download Poster</a></p>
     </footer>
 </body>
 </html>
