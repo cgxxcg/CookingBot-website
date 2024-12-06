@@ -239,7 +239,7 @@ figcaption {
 
 /* Other two images */
 #final-robot .small-pictures .image-container img:hover {
-    transform: scale(1.7); /* More zoom for the other two images */
+    transform: scale(1.5); /* More zoom for the other two images */
 }
 
 
