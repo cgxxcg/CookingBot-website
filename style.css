@@ -471,15 +471,14 @@ figcaption {
 
 
 
-
   #scores {
     background-color: #f4f8ff; /* Light background matching your website theme */
     padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; /* Adds space below the section */
-  }
-  
+}
+
 .tables-container {
     display: flex;
     justify-content: space-between;
@@ -524,4 +523,21 @@ table tr:hover {
 
 table td {
     font-size: 14px;
+}
+
+/* Add style to make "1st!" rank more obvious */
+table td.rank {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff9f00; /* Bright color for visibility */
+    border-radius: 6px;
+    padding: 6px 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+table td.rank:hover {
+    transform: scale(1.1); /* Slightly enlarge the rank on hover */
+    background-color: #ff7f00; /* Darker shade for hover effect */
 }
