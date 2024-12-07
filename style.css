@@ -6,8 +6,6 @@ body {
     padding: 0;
 }
 
-
-
 header h1 {
     font-family: 'Merriweather', serif;
     margin: 0;
@@ -57,7 +55,6 @@ main {
 
 section {
     scroll-margin-top: 140px; /* Adjust based on your header's height */
-    
 }
 
 
@@ -69,6 +66,7 @@ section h2 {
     margin-bottom: 15px;
 }
 
+/*RobotBuilding*/
 #robot-building h3 {
     font-size: 1.1rem;               /* Smaller font size for subsections */
     color: #007bff;                  /* A softer blue for subsection titles */
@@ -88,7 +86,7 @@ section h2 {
 
 .row {
     display: flex;
-    gap: 15px;                        /* Slightly more space between images */
+    gap: 30px;                        /* Slightly more space between images */
     justify-content: center;          /* Center images horizontally */
     align-items: flex-start;
 }
@@ -119,6 +117,8 @@ footer a {
     text-decoration: none;
 }
 
+
+/*Team*/
 #team {
     background-color: #f4f8ff; /* Light background matching your website theme */
     padding: 10px 20px;
@@ -140,8 +140,8 @@ footer a {
 }
 
 .team-logo {
-    max-width: 120px; /* Adjust size of the logo */
-    height: auto;
+    max-width: 150px; /* Adjust size of the logo */
+    height: 150px;
 }
 
 .team-info-right {
@@ -150,29 +150,18 @@ footer a {
     padding-right: 10px;
 }
 
-.team-photo-container {
-    display: flex;
-    justify-content: center;
+.team-related-img-container {
+    display: flex; /* Use Flexbox to align items horizontally */
+    justify-content: center; /* Center the images horizontally */
+    gap: 7px; /* Add space between the images */
     margin-top: 20px;
 }
 
-.team-photo {
-    max-width: 100%;  /* Ensures the photo doesn't overflow */
-    height: auto;
-}
-
-.poster-container {
-    text-align: center; /* Center align the poster */
-    margin-top: 20px; /* Adds space between the team photo and poster */
-}
-
+.team-photo,
 .poster-image {
-    max-width: 80%; /* Adjust the width as needed */
-    height: auto;
+    max-width: 80%; /* Adjust as needed for side-by-side layout */
+    height: 100%;
 }
-
-
-
 
 
 
@@ -213,6 +202,7 @@ figcaption {
     margin-top: 8px; /* Add space above the caption */
     font-size: 1rem; /* Slightly larger font size for better readability */
     color: #555; /* Light color for captions */
+    text-align: center;
 }
 
 .column {
@@ -238,13 +228,17 @@ figcaption {
 
 .large-picture img {
     max-width: 600px; /* Adjust the size for the larger image */
+    max-height:420px;
 }
 
 .caption {
     font-size: 14px; /* Smaller font size for captions */
     color: #555; /* Gray color for captions */
     margin-top: 5px; /* Space above the caption */
+    text-align: center;
 }
+
+
 
 #final-robot .image-container img {
     transition: transform 0.3s ease; /* Smooth transition */
@@ -257,6 +251,9 @@ figcaption {
 /* Final Robot image */
 #final-robot .large-picture .image-container img:hover {
     transform: scale(1.1); /* Slightly more zoom for the Final Robot picture */
+}
+#final-robot .large-picture{
+    height: 80px;
 }
 
 /* Other two images */
@@ -283,6 +280,16 @@ figcaption {
 #redesigned-robot .image-container img:hover {
     transform: scale(1.05); /* Zoom in a little for all images */
 }
+
+.redesigned-robot-image img {
+    width: 500px;
+}
+
+
+
+
+
+
 
 
 /* PID Section */
@@ -342,25 +349,10 @@ figcaption {
   
 
 
-  .general-approach {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    font-weight: 500; /* Slightly bolder for emphasis */
-}
-
-
-
-
 
 /* General Approach Text */
 .general-approach {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     line-height: 1.8;
     color: #333;
     background-color: #e9f5ff; /* Light blue background for better contrast */
@@ -427,11 +419,7 @@ figcaption {
         padding: 20px;
         flex: 1 1 100%; /* Full width for each track block on smaller screens */
     }
-}
-
-
-
-  
+}  
 
   #robot-building {
     
@@ -480,4 +468,7 @@ figcaption {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; /* Adds space below the section */
   }
+
+
+  
   

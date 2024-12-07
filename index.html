@@ -56,25 +56,34 @@
                 
 
                 <div class="row">
-                    <div class="image-container">
-                        <img src="media/chassis_v1.jpg" alt="Chassis Version 1">
-                        <p class="caption">Chassis Version 1</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="media/chassis_v2.png" alt="Chassis Version 2">
-                        <p class="caption">Chassis Version 2</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="media/chassis_v3.png" alt="Chassis Version 3">
-                        <p class="caption">Chassis Version 3</p>
-                    </div>
-                </div>
+        <div class="image-container">
+            <img src="media/chassis_v1.jpg" alt="Chassis Version 1">
+            <p class="caption">Chassis Version 1</p>
+        </div>
+        <div class="image-container">
+            <img src="media/chassis_v2.png" alt="Chassis Version 2">
+            <p class="caption">Chassis Version 2</p>
+        </div>
+        <div class="image-container">
+            <img src="media/chassis_v3.png" alt="Chassis Version 3">
+            <p class="caption">Chassis Version 3</p>
+        </div>
+    </div>
+    <div class="single-image-container">
+        <img src="media/redesigned_robot.png" alt="Redesigned Robot" class="redesigned-robot-image">
+        <p class="caption">Redesigned Robot</p>
+    </div>
             </section>
             
         
             <section id="final-robot">
                 <h3>Final Robot</h3>
-                <p>Our final robot is assembled in a chassis that includes battery support space, a perfboard holder, an Arduino holder, and a light shield for the photoresistor circuit.</p>
+                <ul>
+                    <li>Replaced narrow perfboard photo-resistors with a breadboard. The breadboard was cut in half to accommodate the phototransistors circuit in the front and the potentiometers circuit in the back.</li>
+                    <li>Added a switch for motor driver power to enable easier troubleshooting (wheels can be turned off without resetting anything).</li>
+                    <li>Placed a light strip on top of the photoresistors, which also functions as the top part of the light shield.</li>
+                    <li>Added rubber bands on the wheels to increase traction.</li>
+                </ul>
                 <div class="row">
                     <!-- Vertical layout for layout and chassis pictures -->
                     <div class="column small-pictures">
@@ -90,7 +99,7 @@
                     <!-- Larger picture for the final robot -->
                     <div class="column large-picture">
                         <div class="image-container">
-                            <img src="media/final_robot.png" alt="Final Robot">
+                            <img src="media/final_robot.jpg" alt="Final Robot">
                             <p class="caption">Final Robot</p>
                         </div>
                     </div>
@@ -129,27 +138,27 @@
 
     <!-- General Approach Text -->
     <p class="general-approach">
-        approach we used to tune PID on competition day
+        Adjustments are made iteratively, testing performance on straight paths, curves, and varying lighting conditions. Speed is slow at first(30), and then change P(large for frequency sweep, small for drag race), and then large D for large P. Generally we want D high when P is high to compensate for oscillation and the other way around. Usually I is 0 but we tweak it up for drag race.
     </p>
 
     <!-- Container for Track Blocks -->
     <div class="tracks-container">
         <!-- Track 1 -->
         <div class="track-info">
-            <h4>Track 1:</h4>
-            <p>P = xxx, I = xxx, D = xxx</p>
+            <h4>Track 1</h4>
+            <p>S = 60, P = 70, I = 0, D = 0.98</p>
         </div>
 
         <!-- Track 2 -->
         <div class="track-info">
-            <h4>Track 2:</h4>
-            <p>P = xxx, I = xxx, D = xxx</p>
+            <h4>Track 2</h4>
+            <p>S = 25, P = 75, I = 0.2, D = 0.80</p>
         </div>
 
         <!-- Track 3 -->
         <div class="track-info">
-            <h4>Track 3:</h4>
-            <p>P = xxx, I = xxx, D = xxx</p>
+            <h4>Track 3</h4>
+            <p>S = 100, P = 25, I = 0.05, D = 0.50</p>
         </div>
     </div>
 </div>
@@ -162,23 +171,23 @@
             <h2>Competition Videos</h2>
             <div class="video-container">
                 <div class="video-item">
-                    <h3>Track 1</h3>
+                    <h3>Track 1: Circuit</h3>
                     <video controls>
-                        <source src="media/track1.mp4" type="video/mp4">
+                        <source src="media/circuit.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div class="video-item">
-                    <h3>Track 2</h3>
+                    <h3>Track 2: Frequency Sweep</h3>
                     <video controls>
-                        <source src="media/track2.mp4" type="video/mp4">
+                        <source src="media/freqsweep.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div class="video-item">
-                    <h3>Track 3</h3>
+                    <h3>Track 3: Drag Race</h3>
                     <video controls>
-                        <source src="media/track3.mp4" type="video/mp4">
+                        <source src="media/dragrace.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -188,10 +197,7 @@
 
         <section id="reflections">
             <h2>Reflections</h2>
-            <p>Summary of improvements made during the last week:</p>
-            <p>[Insert improvements made]</p>
-            <p>Ideas for further improvements:</p>
-            <p>[Insert suggestions or future plans]</p>
+            <p>We had a blast putting together our robot and understanding how the code and components worked hand in hand to make it a fully functioning system. Looking back at it, we think we spent most of our time soldering components into the perfboards and think we could've definitely done better there. Overall it was a great experience and we couldn't be happier with our bot placing first in the competition.</p>
         </section>
 
         <section id="team">
@@ -207,15 +213,18 @@
                     <p><strong>Team Members:</strong> Franklin Tan, Congge Xu, Avishke Senanayake, Adel Afif</p>
                 </div>
             </div>
-            <!-- Team Photo Section -->
-            <div class="team-photo-container">
-                <img src="media/team_photo.jpg" alt="CookingBot Team Picture" class="team-photo">
+            <!-- Team Photo and Poster Section -->
+            <div class="team-related-img-container">
+                <figure class="image-container">
+                    <img src="media/team_photo.jpg" alt="CookingBot Team Picture" class="team-photo">
+                    <figcaption>Team Photo</figcaption>
+                </figure>
+                <figure class="image-container">
+                    <img src="media/poster.jpg" alt="Team Poster" class="poster-image">
+                    <figcaption>Team Poster</figcaption>
+                </figure>
             </div>
-            <!-- Poster Section -->
-            <div class="poster-container">
-                <img src="media/poster.jpg" alt="Team Poster" class="poster-image">
-                <figcaption class="poster-caption">Team Poster</figcaption>
-            </div>
+
         </section>
 
         
@@ -225,6 +234,7 @@
 
     <footer>
         <p>&copy; FA24 CookingBot Team | <a href="media/poster.jpg">Download Poster</a></p>
+        <p>Website built by Congge Xu</p>
     </footer>
 </body>
 </html>
