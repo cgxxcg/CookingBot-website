@@ -541,3 +541,32 @@ table td.rank:hover {
     transform: scale(1.1); /* Slightly enlarge the rank on hover */
     background-color: #ff7f00; /* Darker shade for hover effect */
 }
+
+
+
+
+#code {
+    background-color: #f4f8ff; /* Light background matching your website theme */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adds space below the section */
+}
+
+#code img {
+    max-width: 80%;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#code img:hover {
+    transform: scale(1.05);
+}
+
+#code .caption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
